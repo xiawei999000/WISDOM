@@ -1,7 +1,6 @@
 '''
 build the intensity diagnostic network:
 use the T2W-MRI image to train  with weak supervision component
-author: xiav
 '''
 
 import os
