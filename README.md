@@ -1,1 +1,8 @@
-Code used in paper: Artificial intelligence model for lymph nodes diagnosis in rectal cancer on MRI: a multicenter study
+#### Weakly supervISed model DevelOpment fraMework (WISDOM) to construct lymph node diagnosis model with preoperative MRI data coupled with postoperative patient-level pathological information.
+* [0_pretraining_CIFIR10.py](https://github.com/xiawei999000/WISDOM/blob/main/0_pretraining_CIFIR10.py): use the CIFIR10 images to pretrain the intensity diagnostic network.<br>
+* [1_MI_training.py](https://github.com/xiawei999000/WISDOM/blob/main/1_MI_training.py): build the intensity diagnostic network MI using the T2W-MRI image with weak supervision component.<br>
+* [2_MIS_training.py](https://github.com/xiawei999000/WISDOM/blob/main/2_MIS_training.py): build the integrated diagnostic network MIS using the short, long diameters, diamter ratio, and the img predictions of MI.<br>
+* [3_MISA_training.py](https://github.com/xiawei999000/WISDOM/blob/main/3_MISA_training.py): build the integrated diagnostic network MISA using the short, long diameters, diamter ratio, ADC value, and the img predictions of MI.<br>
+* [4_MISA_test_output_preds.py](https://github.com/xiawei999000/WISDOM/blob/main/4_MISA_test_output_preds.py): generate the predictions of MISA for statistic analysis.<br>
+* [5_diagnostic_network_extract.py](https://github.com/xiawei999000/WISDOM/blob/main/5_diagnostic_network_extract.py): extract the diagnostic networks.<br>
+* [6_Heatmap_generation.py](https://github.com/xiawei999000/WISDOM/blob/main/6_Heatmap_generation.py): # generate the heatmap by Grad-CAM to highlight the region related to metastasis.<br>
