@@ -5,4 +5,4 @@
 * [3_MISA_training.py](https://github.com/xiawei999000/WISDOM/blob/main/3_MISA_training.py): build the integrated diagnostic network MISA using the short, long diameters, diamter ratio, ADC value, and the img predictions of MI.<br>
 * [4_MISA_test_output_preds.py](https://github.com/xiawei999000/WISDOM/blob/main/4_MISA_test_output_preds.py): generate the predictions of MISA for statistic analysis.<br>
 * [5_diagnostic_network_extract.py](https://github.com/xiawei999000/WISDOM/blob/main/5_diagnostic_network_extract.py): extract the diagnostic networks.<br>
-* [6_Heatmap_generation.py](https://github.com/xiawei999000/WISDOM/blob/main/6_Heatmap_generation.py): # generate the heatmap by Grad-CAM to highlight the region related to metastasis.<br>
+* [6_Heatmap_generation.py](https://github.com/xiawei999000/WISDOM/blob/main/6_Heatmap_generation.py): generate the heatmap by Grad-CAM to highlight the region related to metastasis.<br>
