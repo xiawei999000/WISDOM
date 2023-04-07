@@ -68,7 +68,7 @@ def get_WISDOM_model(shape_p):
     output_meta_ratio = layers.GlobalAveragePooling1D(name="meta_ratio")(x1)
 
     WISDOM_model_MISA = keras.Model(inputs=model_input, outputs=[output_meta_status, output_meta_ratio],
-                            name="WISDOM_model_two_outputs")
+                            name="WISDOM_model_M_ISA")
 
     print('WISDOM_model_M_ISA')
     WISDOM_model_MISA.summary()
