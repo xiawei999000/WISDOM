@@ -78,9 +78,6 @@ if __name__ == '__main__':
         open('./data/' + center_name + '/patches_2d_bin_std_all/' + img_type + '_2D_patches_3channel.bin', "rb"))
     # load the info
     all_p_name = pickle.load(open('./data/' + center_name + '/patches_2d_bin_std_all/P_name.bin', "rb"))
-    all_LN_meta_labels = pickle.load(open('./data/' + center_name + '/patches_2d_bin_std_all/P_label.bin', "rb"))
-    all_p_N_stage = pickle.load(open('./data/' + center_name + '/patches_2d_bin_std_all/P_N_stage.bin', "rb"))
-    all_p_N_stage_fine = pickle.load(open('./data/' + center_name + '/patches_2d_bin_std_all/P_N_stage_fine.bin', "rb"))
 
     # generate heatmap for each patch
     for p_index in range(0, len(all_p_name)):
