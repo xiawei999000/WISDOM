@@ -509,7 +509,7 @@ if __name__ == '__main__':
     # load original data for model building
     center1_name = 'SHANXI'
     center2_name = 'FUDAN'
-    center3_name = 'YUNNAN'
+    center3_name = 'ZFY'
 
     # load data
     p_patches_c1, p_patch_LDs_c1, p_patch_SDs_c1, p_patch_RDs_c1, p_patch_adc_c1, p_LN_meta_label_c1, p_LN_meta_ratio_c1 \
@@ -517,7 +517,7 @@ if __name__ == '__main__':
     p_patches_c2, p_patch_LDs_c2, p_patch_SDs_c2, p_patch_RDs_c2, p_patch_adc_c2, p_LN_meta_label_c2, p_LN_meta_ratio_c2 \
         = load_LN_data('FUDAN', data_folder_path)
     p_patches_c3, p_patch_LDs_c3, p_patch_SDs_c3, p_patch_RDs_c3, p_patch_adc_c3, p_LN_meta_label_c3, p_LN_meta_ratio_c3 \
-        = load_LN_data('YUNNAN', data_folder_path)
+        = load_LN_data('ZFY', data_folder_path)
 
     p_patches = p_patches_c1
     p_patches.extend(p_patches_c2)
