@@ -394,8 +394,8 @@ def train_model(device, dataloaders, model, criterions, optimizer, scheduler,
                 loss_img_avg = criterions['loss_img_avg'](img_avg_outputs_p_batch, LN_meta_ratio_p_batch)# LOSS for avg pred in img level
                 loss_combined_max = criterions['loss_combined_max'](combined_max_outputs_p_batch, LN_meta_label_p_batch) # LOSS for max pred in combined feature level
                 loss_combined_avg = criterions['loss_combined_avg'](combined_avg_outputs_p_batch, LN_meta_ratio_p_batch) # LOSS for avg pred in combined feature level
-                # loss = loss_img_max + 0.5 * loss_img_avg + loss_combined_max + 0.5 * loss_combined_avg  #
-                loss = loss_combined_max + 0.5 * loss_combined_avg  #
+                # loss = loss_img_max + loss_img_avg + loss_combined_max + loss_combined_avg  #
+                loss = loss_combined_max + loss_combined_avg  #
 
                 # print('loss = ', loss)
                 # backward + optimize only if in training phase
