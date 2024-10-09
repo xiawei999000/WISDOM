@@ -7,3 +7,4 @@
 * [4_MISA_test_output_preds.py](https://github.com/xiawei999000/WISDOM/blob/main/4_MISA_test_output_preds.py): generate the predictions of MISA for statistic analysis.<br>
 * [5_diagnostic_network_extract.py](https://github.com/xiawei999000/WISDOM/blob/main/5_diagnostic_network_extract.py): extract the diagnostic networks.<br>
 * [6_Heatmap_generation.py](https://github.com/xiawei999000/WISDOM/blob/main/6_Heatmap_generation.py): generate the heatmap by Grad-CAM to highlight the region related to metastasis.<br>
+* [7_pytorch_implementation](https://github.com/xiawei999000/WISDOM/tree/main/pytorch_implementation): new implementation using pytorch. The size, ADC value, and image features were fused in one stage.<br>
