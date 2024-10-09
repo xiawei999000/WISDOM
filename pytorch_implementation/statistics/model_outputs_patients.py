@@ -47,7 +47,7 @@ def load_LN_data(center_name, data_folder_path):
     p_set_name = [center_name] * len(all_p_name)
     if center_name == 'FUDAN':
         p_set_name = ['EVC1'] * len(all_p_name)
-    if center_name == 'YUNNAN':
+    if center_name == 'ZFY':
         p_set_name = ['EVC2'] * len(all_p_name)
 
     # # exclude the bad data
@@ -106,7 +106,7 @@ if __name__ == '__main__':
     # load data
     data_folder_path = './data-new/'
 
-    center_name = 'SHANXI'  # DC--SHANXI EVC1--FUDAN  EVC2--YUNNAN
+    center_name = 'FUDAN'  # DC--SHANXI EVC1--FUDAN  EVC2--ZFY
 
     all_p_name, all_p_patches, all_p_patch_LDs, all_p_patch_SDs, all_p_patch_RDs, all_p_patch_adc, all_LN_meta_labels, all_p_N_stages, p_set_names \
         = load_LN_data(center_name, data_folder_path)
