@@ -29,7 +29,7 @@ rcorr.cens(as.numeric(EVC1_cN_pred), as.factor(EVC1_result$N_stage))[[1]]
 
 
 # EVC2
-EVC2_result <- read.xlsx('./YUNNAN_patient_preds_LN_num.xlsx',1)
+EVC2_result <- read.xlsx('./ZFY_patient_preds_LN_num.xlsx',1)
 EVC2_label <- EVC2_result$meta_status
 EVC2_preds <- EVC2_result$patch_pred_max
 EVC2_auc <- roc(as.factor(EVC2_label),EVC2_preds,
