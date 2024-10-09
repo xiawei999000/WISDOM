@@ -1,6 +1,6 @@
 # calculate LN meta number and cN stage
 data_path <- './'
-center_name <- 'YUNNAN'  # SHANXI FUDAN  YUNNAN
+center_name <- 'FUDAN'  # SHANXI FUDAN  ZFY
 
 patches_preds_path <- paste(data_path,center_name,'_patches_preds.xlsx', sep = "")
 patches_preds_info <- read.xlsx(patches_preds_path, 1)
